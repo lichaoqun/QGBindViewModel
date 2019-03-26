@@ -81,4 +81,17 @@ static QIEBindModelViewTool *bindModelViewTool_ = nil;
     return _bindUserModelViewsArray;
 }
 
+// - MARK: <-- 释放内存 -->
+/** 销毁工具类 */
++(void)destoryTool{
+    if (bindModelViewTool_) {
+        [bindModelViewTool_.bindRoomModelViewsArray removeAllObjects];
+        [bindModelViewTool_.bindUserModelViewsArray removeAllObjects];
+        bindModelViewTool_ = nil;
+    }
+}
+
+-(void)dealloc{
+    NSLog(@"==========dealloc=========");
+}
 @end

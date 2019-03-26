@@ -43,4 +43,7 @@ typedef NS_ENUM(NSInteger, QIEBindViewType) {
 /** 当调用 bindViewType 对应的 model 的 set方法 就调用 anObj 的 refreshUI: 方法*/
 -(void)bindModelClass:(QIEBindViewType)bindViewType object:(id <QIERefreshUIProtocol> )anObj;
 
+/** 销毁工具类 */
++(void)destoryTool;
+
 @end

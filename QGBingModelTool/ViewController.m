@@ -40,7 +40,7 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [[QIEBindModelViewTool bindModelViewTool] bindModelClass:QIEBindViewTypeRoomModel object:self];
+    [QIEBindModelViewTool destoryTool];
 
 }
 
